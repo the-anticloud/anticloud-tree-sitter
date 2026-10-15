@@ -1,0 +1,2446 @@
+{
+  "schema": "anticloud.tier-bench/1",
+  "project": "TREE_SITTER",
+  "source": {
+    "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\SOFTWARE_DEVELOPMENT\\TREE_SITTER\\UPSTREAM_CLONE",
+    "git": {
+      "head": "",
+      "url": "https://github.com/the-anticloud/OPENMRS_CORE.git",
+      "branch": "master",
+      "committed_at": "2026-09-29T11:06:59+04:00"
+    }
+  },
+  "metrics": {
+    "files_total": 602,
+    "source_files_scanned": 349,
+    "lines_of_code": 103389,
+    "languages": {
+      ".rs": 109,
+      ".js": 84,
+      ".txt": 83,
+      ".md": 75,
+      ".c": 67,
+      ".h": 47,
+      "(none)": 32,
+      ".ts": 28,
+      ".toml": 17,
+      ".json": 14,
+      ".py": 7,
+      ".nix": 6,
+      ".zig": 4,
+      ".png": 4,
+      ".lock": 3
+    }
+  },
+  "licence": {
+    "spdx": "MIT",
+    "class": "A",
+    "source_file": "LICENSE",
+    "redistribution_allowed": true
+  },
+  "dependencies": {
+    "count": 182,
+    "unique": 120,
+    "by_ecosystem": {
+      "cargo": 159,
+      "go": 1,
+      "npm": 20,
+      "pypi": 2
+    },
+    "list": [
+      {
+        "ecosystem": "cargo",
+        "name": "resolver",
+        "version": "2",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "edition",
+        "version": "2024",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "homepage",
+        "version": "https://tree-sitter.github.io/tree-sitter",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "license",
+        "version": "MIT",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "repository",
+        "version": "https://github.com/tree-sitter/tree-sitter",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "rust-version",
+        "version": "1.90",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "version",
+        "version": "0.28.0",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "dbg_macro",
+        "version": "deny",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "disallowed_methods",
+        "version": "deny",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "todo",
+        "version": "deny",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "cast_possible_truncation",
+        "version": "allow",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "cast_possible_wrap",
+        "version": "allow",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "cast_precision_loss",
+        "version": "allow",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "cast_sign_loss",
+        "version": "allow",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "if_not_else",
+        "version": "allow",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "items_after_statements",
+        "version": "allow",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "missing_errors_doc",
+        "version": "allow",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "missing_panics_doc",
+        "version": "allow",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "multiple_crate_versions",
+        "version": "allow",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "option_if_let_else",
+        "version": "allow",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "similar_names",
+        "version": "allow",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "string_lit_as_bytes",
+        "version": "allow",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "struct_excessive_bools",
+        "version": "allow",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "too_many_lines",
+        "version": "allow",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "tuple_array_conversions",
+        "version": "allow",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "mismatched_lifetime_syntaxes",
+        "version": "allow",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "inherits",
+        "version": "release",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "inherits",
+        "version": "optimize",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "opt-level",
+        "version": "s",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "inherits",
+        "version": "release",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "ansi_colours",
+        "version": "1.2.3",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "anstyle",
+        "version": "1.0.14",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "anyhow",
+        "version": "1.0.102",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "bstr",
+        "version": "1.12.1",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "cc",
+        "version": "1.2.63",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "clap",
+        "version": "4.5.58",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "clap_complete",
+        "version": "4.6.3",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "clap_complete_nushell",
+        "version": "4.5.10",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "crc32fast",
+        "version": "1.5.0",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "ctor",
+        "version": "0.6.3",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "ctrlc",
+        "version": "3.5.2",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "dialoguer",
+        "version": "0.12.0",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "dunce",
+        "version": "1.0.5",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "etcetera",
+        "version": "0.11.0",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "glob",
+        "version": "0.3.3",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "hashbrown",
+        "version": "0.17.1",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "heck",
+        "version": "0.5.0",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "html-escape",
+        "version": "0.2.13",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "indexmap",
+        "version": "2.13.0",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "indoc",
+        "version": "2.0.7",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "libloading",
+        "version": "0.9.0",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "log",
+        "version": "0.4.30",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "memchr",
+        "version": "2.8.1",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "once_cell",
+        "version": "1.21.3",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "pretty_assertions",
+        "version": "1.4.1",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "rand",
+        "version": "0.10.1",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "regex",
+        "version": "1.12.3",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "regex-syntax",
+        "version": "0.8.11",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "rustc-hash",
+        "version": "2.1.1",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "schemars",
+        "version": "1.2.1",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "semver",
+        "version": "1.0.27",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "serde",
+        "version": "1.0.228",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "serde_json",
+        "version": "1.0.150",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "similar",
+        "version": "2.7.0",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "streaming-iterator",
+        "version": "0.1.9",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "tempfile",
+        "version": "3.25.0",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "thiserror",
+        "version": "2.0.18",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "tiny_http",
+        "version": "0.12.0",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "topological-sort",
+        "version": "0.2.2",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "unindent",
+        "version": "0.2.4",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "walkdir",
+        "version": "2.5.0",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "wasmparser",
+        "version": "0.244.0",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "webbrowser",
+        "version": "1.2.1",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "tree-sitter",
+        "version": "0.28.0",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "tree-sitter-config",
+        "version": "0.28.0",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "tree-sitter-generate",
+        "version": "0.28.0",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "tree-sitter-highlight",
+        "version": "0.28.0",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "tree-sitter-loader",
+        "version": "0.28.0",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "tree-sitter-tags",
+        "version": "0.28.0",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "tree-sitter-language",
+        "version": "0.1.8",
+        "source_file": "Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "name",
+        "version": "rust-wasm-web-test",
+        "source_file": "test/fixtures/rust_wasm_web/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "version",
+        "version": "0.0.0",
+        "source_file": "test/fixtures/rust_wasm_web/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "edition",
+        "version": "2024",
+        "source_file": "test/fixtures/rust_wasm_web/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "rust-version",
+        "version": "1.90",
+        "source_file": "test/fixtures/rust_wasm_web/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "path",
+        "version": "src/rust_wasm_web.rs",
+        "source_file": "test/fixtures/rust_wasm_web/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "name",
+        "version": "tree-sitter",
+        "source_file": "lib/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "description",
+        "version": "Rust bindings to the Tree-sitter parsing library",
+        "source_file": "lib/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "rust-version",
+        "version": "1.90",
+        "source_file": "lib/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "readme",
+        "version": "binding_rust/README.md",
+        "source_file": "lib/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "documentation",
+        "version": "https://docs.rs/tree-sitter",
+        "source_file": "lib/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "build",
+        "version": "binding_rust/build.rs",
+        "source_file": "lib/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "links",
+        "version": "tree-sitter",
+        "source_file": "lib/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "regex",
+        "version": "1.12.3",
+        "source_file": "lib/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "streaming-iterator",
+        "version": "0.1.9",
+        "source_file": "lib/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "package",
+        "version": "wasmtime-c-api-impl",
+        "source_file": "lib/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "version",
+        "version": "48.0.5",
+        "source_file": "lib/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "bindgen",
+        "version": "0.72.1",
+        "source_file": "lib/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "path",
+        "version": "binding_rust/lib.rs",
+        "source_file": "lib/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@eslint/js",
+        "version": "^9.39.1",
+        "source_file": "lib/binding_web/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/emscripten",
+        "version": "^1.41.6",
+        "source_file": "lib/binding_web/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/node",
+        "version": "^26.6.3",
+        "source_file": "lib/binding_web/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@vitest/coverage-v8",
+        "version": "^3.0.5",
+        "source_file": "lib/binding_web/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "dts-buddy",
+        "version": "^0.8.3",
+        "source_file": "lib/binding_web/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "esbuild",
+        "version": "^0.28.2",
+        "source_file": "lib/binding_web/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint",
+        "version": "^10.11.0",
+        "source_file": "lib/binding_web/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "source-map",
+        "version": "^0.8.0",
+        "source_file": "lib/binding_web/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "tsx",
+        "version": "^4.23.15",
+        "source_file": "lib/binding_web/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "typescript",
+        "version": "^5.7.3",
+        "source_file": "lib/binding_web/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "typescript-eslint",
+        "version": "^8.71.0",
+        "source_file": "lib/binding_web/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "vitest",
+        "version": "^3.0.5",
+        "source_file": "lib/binding_web/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "name",
+        "version": "xtask",
+        "source_file": "crates/xtask/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "version",
+        "version": "0.1.0",
+        "source_file": "crates/xtask/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "bindgen",
+        "version": "0.72.1",
+        "source_file": "crates/xtask/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "notify",
+        "version": "8.2.0",
+        "source_file": "crates/xtask/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "notify-debouncer-full",
+        "version": "0.7.0",
+        "source_file": "crates/xtask/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "name",
+        "version": "tree-sitter-tags",
+        "source_file": "crates/tags/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "description",
+        "version": "Library for extracting tag information",
+        "source_file": "crates/tags/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "documentation",
+        "version": "https://docs.rs/tree-sitter-tags",
+        "source_file": "crates/tags/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "path",
+        "version": "src/tags.rs",
+        "source_file": "crates/tags/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "name",
+        "version": "tree-sitter-loader",
+        "source_file": "crates/loader/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "description",
+        "version": "Locates, builds, and loads tree-sitter grammars at runtime",
+        "source_file": "crates/loader/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "documentation",
+        "version": "https://docs.rs/tree-sitter-loader",
+        "source_file": "crates/loader/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "path",
+        "version": "src/loader.rs",
+        "source_file": "crates/loader/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "name",
+        "version": "tree-sitter-language",
+        "source_file": "crates/language/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "description",
+        "version": "The tree-sitter Language type, used by the library and by language implementations",
+        "source_file": "crates/language/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "version",
+        "version": "0.1.8",
+        "source_file": "crates/language/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "rust-version",
+        "version": "1.90",
+        "source_file": "crates/language/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "documentation",
+        "version": "https://docs.rs/tree-sitter-language",
+        "source_file": "crates/language/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "build",
+        "version": "build.rs",
+        "source_file": "crates/language/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "links",
+        "version": "tree-sitter-language",
+        "source_file": "crates/language/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "path",
+        "version": "src/language.rs",
+        "source_file": "crates/language/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "name",
+        "version": "tree-sitter-highlight",
+        "source_file": "crates/highlight/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "description",
+        "version": "Library for performing syntax highlighting with Tree-sitter",
+        "source_file": "crates/highlight/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "documentation",
+        "version": "https://docs.rs/tree-sitter-highlight",
+        "source_file": "crates/highlight/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "path",
+        "version": "src/highlight.rs",
+        "source_file": "crates/highlight/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "name",
+        "version": "tree-sitter-generate",
+        "source_file": "crates/generate/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "description",
+        "version": "Library for generating C source code from a tree-sitter grammar",
+        "source_file": "crates/generate/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "documentation",
+        "version": "https://docs.rs/tree-sitter-generate",
+        "source_file": "crates/generate/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "path",
+        "version": "src/generate.rs",
+        "source_file": "crates/generate/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "bitflags",
+        "version": "2.11.1",
+        "source_file": "crates/generate/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "pathdiff",
+        "version": "0.2.3",
+        "source_file": "crates/generate/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "rquickjs",
+        "version": "0.14",
+        "source_file": "crates/generate/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "name",
+        "version": "tree-sitter-config",
+        "source_file": "crates/config/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "description",
+        "version": "User configuration of tree-sitter's command line programs",
+        "source_file": "crates/config/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "documentation",
+        "version": "https://docs.rs/tree-sitter-config",
+        "source_file": "crates/config/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "path",
+        "version": "src/tree_sitter_config.rs",
+        "source_file": "crates/config/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "name",
+        "version": "tree-sitter-cli",
+        "source_file": "crates/cli/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "description",
+        "version": "CLI tool for developing, testing, and using Tree-sitter parsers",
+        "source_file": "crates/cli/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "documentation",
+        "version": "https://docs.rs/tree-sitter-cli",
+        "source_file": "crates/cli/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "path",
+        "version": "src/tree_sitter_cli.rs",
+        "source_file": "crates/cli/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "name",
+        "version": "tree-sitter",
+        "source_file": "crates/cli/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "path",
+        "version": "src/main.rs",
+        "source_file": "crates/cli/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "name",
+        "version": "benchmark",
+        "source_file": "crates/cli/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "encoding_rs",
+        "version": "0.8.35",
+        "source_file": "crates/cli/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "widestring",
+        "version": "1.2.1",
+        "source_file": "crates/cli/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "pkg-fmt",
+        "version": "zip",
+        "source_file": "crates/cli/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "pkg-url",
+        "version": "{ repo }/releases/download/v{ version }/{ name }-linux-arm64{ archive-suffix }",
+        "source_file": "crates/cli/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "pkg-url",
+        "version": "{ repo }/releases/download/v{ version }/{ name }-linux-arm{ archive-suffix }",
+        "source_file": "crates/cli/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "pkg-url",
+        "version": "{ repo }/releases/download/v{ version }/{ name }-linux-x64{ archive-suffix }",
+        "source_file": "crates/cli/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "pkg-url",
+        "version": "{ repo }/releases/download/v{ version }/{ name }-linux-x86{ archive-suffix }",
+        "source_file": "crates/cli/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "pkg-url",
+        "version": "{ repo }/releases/download/v{ version }/{ name }-linux-powerpc64{ archive-suffix }",
+        "source_file": "crates/cli/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "pkg-url",
+        "version": "{ repo }/releases/download/v{ version }/{ name }-windows-arm64{ archive-suffix }",
+        "source_file": "crates/cli/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "pkg-url",
+        "version": "{ repo }/releases/download/v{ version }/{ name }-windows-x64{ archive-suffix }",
+        "source_file": "crates/cli/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "pkg-url",
+        "version": "{ repo }/releases/download/v{ version }/{ name }-windows-x86{ archive-suffix }",
+        "source_file": "crates/cli/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "pkg-url",
+        "version": "{ repo }/releases/download/v{ version }/{ name }-macos-arm64{ archive-suffix }",
+        "source_file": "crates/cli/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "pkg-url",
+        "version": "{ repo }/releases/download/v{ version }/{ name }-macos-x64{ archive-suffix }",
+        "source_file": "crates/cli/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "name",
+        "version": "tree-sitter-tests-proc-macro",
+        "source_file": "crates/cli/src/tests/proc_macro/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "version",
+        "version": "0.0.0",
+        "source_file": "crates/cli/src/tests/proc_macro/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "proc-macro2",
+        "version": "1.0.93",
+        "source_file": "crates/cli/src/tests/proc_macro/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "quote",
+        "version": "1.0.38",
+        "source_file": "crates/cli/src/tests/proc_macro/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "cargo",
+        "name": "syn",
+        "version": "2.0.96",
+        "source_file": "crates/cli/src/tests/proc_macro/Cargo.toml",
+        "raw": ""
+      },
+      {
+        "ecosystem": "go",
+        "name": "github.com/tree-sitter/go-tree-sitter",
+        "version": "v0.24.0",
+        "source_file": "crates/cli/src/templates/go.mod",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "node-addon-api",
+        "version": "^8.5.0",
+        "source_file": "crates/cli/src/templates/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "node-gyp-build",
+        "version": "^4.8.4",
+        "source_file": "crates/cli/src/templates/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "prebuildify",
+        "version": "^6.0.1",
+        "source_file": "crates/cli/src/templates/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "tree-sitter",
+        "version": "^0.25.0",
+        "source_file": "crates/cli/src/templates/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "tree-sitter-cli",
+        "version": "^CLI_VERSION",
+        "source_file": "crates/cli/src/templates/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "tree-sitter",
+        "version": "^0.25.0",
+        "source_file": "crates/cli/src/templates/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "-std",
+        "version": "=c11",
+        "source_file": "crates/cli/src/templates/setup.py",
+        "raw": "-std=c11"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "-fvisibility",
+        "version": "=hidden",
+        "source_file": "crates/cli/src/templates/setup.py",
+        "raw": "-fvisibility=hidden"
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-jsdoc",
+        "version": "^62.7.0",
+        "source_file": "crates/cli/eslint/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint",
+        "version": ">= 9",
+        "source_file": "crates/cli/eslint/package.json",
+        "raw": ""
+      }
+    ]
+  },
+  "owasp_top10": {
+    "total_findings": 19,
+    "files_with_findings": 18,
+    "severity": {
+      "high": 2,
+      "medium": 0,
+      "low": 17
+    },
+    "categories": {
+      "A01-BrokenAccessControl": {
+        "count": 0,
+        "findings": []
+      },
+      "A02-CryptographicFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A03-Injection": {
+        "count": 2,
+        "findings": [
+          {
+            "severity": "high",
+            "file": "docs/src/assets/js/playground.js",
+            "line": 417,
+            "cwe": "CWE-95",
+            "snippet": "while ((match = CAPTURE_REGEX.exec(line.text))) {"
+          },
+          {
+            "severity": "high",
+            "file": "crates/generate/src/prepare_grammar/expand_repeats.rs",
+            "line": 63,
+            "cwe": "CWE-95",
+            "snippet": "let width = self.zero_width.eval(pool, content);"
+          }
+        ]
+      },
+      "A04-InsecureDesign": {
+        "count": 10,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "lib/src/parser.c",
+            "line": 1438,
+            "cwe": "CWE-",
+            "snippet": "// TODO: Figure out how to make this condition occur."
+          },
+          {
+            "severity": "low",
+            "file": "lib/lldb_pretty_printers/table_entry.py",
+            "line": 9,
+            "cwe": "CWE-",
+            "snippet": "# TODO: Same inline issue as with `TSTreeSyntheticProvider`."
+          },
+          {
+            "severity": "low",
+            "file": "lib/lldb_pretty_printers/ts_tree.py",
+            "line": 10,
+            "cwe": "CWE-",
+            "snippet": "# TODO: Ideally, we'd display the elements of `included_ranges` as"
+          },
+          {
+            "severity": "low",
+            "file": "lib/binding_rust/lib.rs",
+            "line": 502,
+            "cwe": "CWE-",
+            "snippet": "// TODO: Remove this struct at some point. If `core::str::lossy::Utf8Lossy`"
+          },
+          {
+            "severity": "low",
+            "file": "crates/xtask/src/embed_sources.rs",
+            "line": 18,
+            "cwe": "CWE-",
+            "snippet": "/// TODO: Once Binaryen releases a version with the fix, and emscripten updates to that"
+          },
+          {
+            "severity": "low",
+            "file": "crates/loader/src/loader.rs",
+            "line": 1317,
+            "cwe": "CWE-",
+            "snippet": "// TODO: remove when supported"
+          },
+          {
+            "severity": "low",
+            "file": "crates/cli/src/init.rs",
+            "line": 839,
+            "cwe": "CWE-",
+            "snippet": "// TODO: remove old migrations"
+          },
+          {
+            "severity": "low",
+            "file": "crates/cli/src/main.rs",
+            "line": 220,
+            "cwe": "CWE-",
+            "snippet": "#[arg(long, short = 'd')] // TODO: Rework once clap adds `default_missing_value_t`"
+          },
+          {
+            "severity": "low",
+            "file": "crates/cli/src/tests/query_test.rs",
+            "line": 5101,
+            "cwe": "CWE-",
+            "snippet": "// TODO: figure out why line comments, an extra, are no longer allowed *anywhere*"
+          },
+          {
+            "severity": "low",
+            "file": "crates/cli/src/templates/grammar.js",
+            "line": 14,
+            "cwe": "CWE-",
+            "snippet": "// TODO: add the actual grammar rules"
+          }
+        ]
+      },
+      "A05-SecurityMisconfiguration": {
+        "count": 0,
+        "findings": []
+      },
+      "A06-VulnerableComponents": {
+        "count": 0,
+        "findings": []
+      },
+      "A07-AuthFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A08-SoftwareDataIntegrity": {
+        "count": 5,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "lib/src/unicode/umachine.h",
+            "line": 2,
+            "cwe": "CWE-319",
+            "snippet": "// License & terms of use: http://www.unicode.org/copyright.html"
+          },
+          {
+            "severity": "low",
+            "file": "lib/src/unicode/utf16.h",
+            "line": 2,
+            "cwe": "CWE-319",
+            "snippet": "// License & terms of use: http://www.unicode.org/copyright.html"
+          },
+          {
+            "severity": "low",
+            "file": "lib/src/unicode/utf8.h",
+            "line": 2,
+            "cwe": "CWE-319",
+            "snippet": "// License & terms of use: http://www.unicode.org/copyright.html"
+          },
+          {
+            "severity": "low",
+            "file": "crates/cli/src/playground.rs",
+            "line": 119,
+            "cwe": "CWE-319",
+            "snippet": "let url = format!(\"http://{}\", server.server_addr());"
+          },
+          {
+            "severity": "low",
+            "file": "crates/cli/src/test.rs",
+            "line": 764,
+            "cwe": "CWE-",
+            "snippet": "ChangeTag::Equal => (' ', None),"
+          }
+        ]
+      },
+      "A09-LoggingMonitoringFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A10-SSRF": {
+        "count": 2,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "lib/binding_web/test/parser.test.ts",
+            "line": 277,
+            "cwe": "CWE-601",
+            "snippet": "'redirect: (heredoc_redirect (heredoc_start) ' +"
+          },
+          {
+            "severity": "low",
+            "file": "crates/cli/src/playground.rs",
+            "line": 144,
+            "cwe": "CWE-601",
+            "snippet": "redirect(\"https://tree-sitter.github.io/tree-sitter/assets/js/playground.js\")"
+          }
+        ]
+      }
+    }
+  },
+  "owasp_llm_top10": {
+    "total_findings": 0,
+    "files_with_findings": 0,
+    "severity": {
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "categories": {
+      "LLM01-PromptInjection": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM02-SensitiveInfoDisclosure": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM03-SupplyChain": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM04-DataPoisoning": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM05-ImproperOutputHandling": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM06-ExcessiveAgency": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM07-SystemPromptLeak": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM08-VectorEmbeddingWeaknesses": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM09-Misinformation": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM10-UnboundedConsumption": {
+        "count": 0,
+        "findings": []
+      }
+    }
+  },
+  "sbom": {
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:c0c009ff-121b-5c3c-a541-90c6e9087366",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-06T06:14:08Z",
+      "component": {
+        "type": "application",
+        "name": "TREE_SITTER",
+        "version": "83b357604d34",
+        "bom-ref": "pkg:generic/anticloud/TREE_SITTER@83b357604d34",
+        "purl": "pkg:generic/anticloud/TREE_SITTER@83b357604d34",
+        "licenses": [
+          {
+            "license": {
+              "id": "MIT"
+            }
+          }
+        ]
+      },
+      "properties": [
+        {
+          "name": "anticloud:source-commit",
+          "value": ""
+        },
+        {
+          "name": "anticloud:source-url",
+          "value": "https://github.com/the-anticloud/OPENMRS_CORE.git"
+        },
+        {
+          "name": "anticloud:tier",
+          "value": "tier-agent"
+        }
+      ]
+    },
+    "components": [
+      {
+        "type": "library",
+        "name": "resolver",
+        "version": "2",
+        "purl": "pkg:cargo/resolver@2",
+        "bom-ref": "cargo/resolver@2"
+      },
+      {
+        "type": "library",
+        "name": "edition",
+        "version": "2024",
+        "purl": "pkg:cargo/edition@2024",
+        "bom-ref": "cargo/edition@2024"
+      },
+      {
+        "type": "library",
+        "name": "homepage",
+        "version": "https://tree-sitter.github.io/tree-sitter",
+        "purl": "pkg:cargo/homepage@https://tree-sitter.github.io/tree-sitter",
+        "bom-ref": "cargo/homepage@https://tree-sitter.github.io/tree-sitter"
+      },
+      {
+        "type": "library",
+        "name": "license",
+        "version": "MIT",
+        "purl": "pkg:cargo/license@MIT",
+        "bom-ref": "cargo/license@MIT"
+      },
+      {
+        "type": "library",
+        "name": "repository",
+        "version": "https://github.com/tree-sitter/tree-sitter",
+        "purl": "pkg:cargo/repository@https://github.com/tree-sitter/tree-sitter",
+        "bom-ref": "cargo/repository@https://github.com/tree-sitter/tree-sitter"
+      },
+      {
+        "type": "library",
+        "name": "rust-version",
+        "version": "1.90",
+        "purl": "pkg:cargo/rust-version@1.90",
+        "bom-ref": "cargo/rust-version@1.90"
+      },
+      {
+        "type": "library",
+        "name": "version",
+        "version": "0.28.0",
+        "purl": "pkg:cargo/version@0.28.0",
+        "bom-ref": "cargo/version@0.28.0"
+      },
+      {
+        "type": "library",
+        "name": "dbg_macro",
+        "version": "deny",
+        "purl": "pkg:cargo/dbg_macro@deny",
+        "bom-ref": "cargo/dbg_macro@deny"
+      },
+      {
+        "type": "library",
+        "name": "disallowed_methods",
+        "version": "deny",
+        "purl": "pkg:cargo/disallowed_methods@deny",
+        "bom-ref": "cargo/disallowed_methods@deny"
+      },
+      {
+        "type": "library",
+        "name": "todo",
+        "version": "deny",
+        "purl": "pkg:cargo/todo@deny",
+        "bom-ref": "cargo/todo@deny"
+      },
+      {
+        "type": "library",
+        "name": "cast_possible_truncation",
+        "version": "allow",
+        "purl": "pkg:cargo/cast_possible_truncation@allow",
+        "bom-ref": "cargo/cast_possible_truncation@allow"
+      },
+      {
+        "type": "library",
+        "name": "cast_possible_wrap",
+        "version": "allow",
+        "purl": "pkg:cargo/cast_possible_wrap@allow",
+        "bom-ref": "cargo/cast_possible_wrap@allow"
+      },
+      {
+        "type": "library",
+        "name": "cast_precision_loss",
+        "version": "allow",
+        "purl": "pkg:cargo/cast_precision_loss@allow",
+        "bom-ref": "cargo/cast_precision_loss@allow"
+      },
+      {
+        "type": "library",
+        "name": "cast_sign_loss",
+        "version": "allow",
+        "purl": "pkg:cargo/cast_sign_loss@allow",
+        "bom-ref": "cargo/cast_sign_loss@allow"
+      },
+      {
+        "type": "library",
+        "name": "if_not_else",
+        "version": "allow",
+        "purl": "pkg:cargo/if_not_else@allow",
+        "bom-ref": "cargo/if_not_else@allow"
+      },
+      {
+        "type": "library",
+        "name": "items_after_statements",
+        "version": "allow",
+        "purl": "pkg:cargo/items_after_statements@allow",
+        "bom-ref": "cargo/items_after_statements@allow"
+      },
+      {
+        "type": "library",
+        "name": "missing_errors_doc",
+        "version": "allow",
+        "purl": "pkg:cargo/missing_errors_doc@allow",
+        "bom-ref": "cargo/missing_errors_doc@allow"
+      },
+      {
+        "type": "library",
+        "name": "missing_panics_doc",
+        "version": "allow",
+        "purl": "pkg:cargo/missing_panics_doc@allow",
+        "bom-ref": "cargo/missing_panics_doc@allow"
+      },
+      {
+        "type": "library",
+        "name": "multiple_crate_versions",
+        "version": "allow",
+        "purl": "pkg:cargo/multiple_crate_versions@allow",
+        "bom-ref": "cargo/multiple_crate_versions@allow"
+      },
+      {
+        "type": "library",
+        "name": "option_if_let_else",
+        "version": "allow",
+        "purl": "pkg:cargo/option_if_let_else@allow",
+        "bom-ref": "cargo/option_if_let_else@allow"
+      },
+      {
+        "type": "library",
+        "name": "similar_names",
+        "version": "allow",
+        "purl": "pkg:cargo/similar_names@allow",
+        "bom-ref": "cargo/similar_names@allow"
+      },
+      {
+        "type": "library",
+        "name": "string_lit_as_bytes",
+        "version": "allow",
+        "purl": "pkg:cargo/string_lit_as_bytes@allow",
+        "bom-ref": "cargo/string_lit_as_bytes@allow"
+      },
+      {
+        "type": "library",
+        "name": "struct_excessive_bools",
+        "version": "allow",
+        "purl": "pkg:cargo/struct_excessive_bools@allow",
+        "bom-ref": "cargo/struct_excessive_bools@allow"
+      },
+      {
+        "type": "library",
+        "name": "too_many_lines",
+        "version": "allow",
+        "purl": "pkg:cargo/too_many_lines@allow",
+        "bom-ref": "cargo/too_many_lines@allow"
+      },
+      {
+        "type": "library",
+        "name": "tuple_array_conversions",
+        "version": "allow",
+        "purl": "pkg:cargo/tuple_array_conversions@allow",
+        "bom-ref": "cargo/tuple_array_conversions@allow"
+      },
+      {
+        "type": "library",
+        "name": "mismatched_lifetime_syntaxes",
+        "version": "allow",
+        "purl": "pkg:cargo/mismatched_lifetime_syntaxes@allow",
+        "bom-ref": "cargo/mismatched_lifetime_syntaxes@allow"
+      },
+      {
+        "type": "library",
+        "name": "inherits",
+        "version": "release",
+        "purl": "pkg:cargo/inherits@release",
+        "bom-ref": "cargo/inherits@release"
+      },
+      {
+        "type": "library",
+        "name": "opt-level",
+        "version": "s",
+        "purl": "pkg:cargo/opt-level@s",
+        "bom-ref": "cargo/opt-level@s"
+      },
+      {
+        "type": "library",
+        "name": "ansi_colours",
+        "version": "1.2.3",
+        "purl": "pkg:cargo/ansi_colours@1.2.3",
+        "bom-ref": "cargo/ansi_colours@1.2.3"
+      },
+      {
+        "type": "library",
+        "name": "anstyle",
+        "version": "1.0.14",
+        "purl": "pkg:cargo/anstyle@1.0.14",
+        "bom-ref": "cargo/anstyle@1.0.14"
+      },
+      {
+        "type": "library",
+        "name": "anyhow",
+        "version": "1.0.102",
+        "purl": "pkg:cargo/anyhow@1.0.102",
+        "bom-ref": "cargo/anyhow@1.0.102"
+      },
+      {
+        "type": "library",
+        "name": "bstr",
+        "version": "1.12.1",
+        "purl": "pkg:cargo/bstr@1.12.1",
+        "bom-ref": "cargo/bstr@1.12.1"
+      },
+      {
+        "type": "library",
+        "name": "cc",
+        "version": "1.2.63",
+        "purl": "pkg:cargo/cc@1.2.63",
+        "bom-ref": "cargo/cc@1.2.63"
+      },
+      {
+        "type": "library",
+        "name": "clap",
+        "version": "4.5.58",
+        "purl": "pkg:cargo/clap@4.5.58",
+        "bom-ref": "cargo/clap@4.5.58"
+      },
+      {
+        "type": "library",
+        "name": "clap_complete",
+        "version": "4.6.3",
+        "purl": "pkg:cargo/clap_complete@4.6.3",
+        "bom-ref": "cargo/clap_complete@4.6.3"
+      },
+      {
+        "type": "library",
+        "name": "clap_complete_nushell",
+        "version": "4.5.10",
+        "purl": "pkg:cargo/clap_complete_nushell@4.5.10",
+        "bom-ref": "cargo/clap_complete_nushell@4.5.10"
+      },
+      {
+        "type": "library",
+        "name": "crc32fast",
+        "version": "1.5.0",
+        "purl": "pkg:cargo/crc32fast@1.5.0",
+        "bom-ref": "cargo/crc32fast@1.5.0"
+      },
+      {
+        "type": "library",
+        "name": "ctor",
+        "version": "0.6.3",
+        "purl": "pkg:cargo/ctor@0.6.3",
+        "bom-ref": "cargo/ctor@0.6.3"
+      },
+      {
+        "type": "library",
+        "name": "ctrlc",
+        "version": "3.5.2",
+        "purl": "pkg:cargo/ctrlc@3.5.2",
+        "bom-ref": "cargo/ctrlc@3.5.2"
+      },
+      {
+        "type": "library",
+        "name": "dialoguer",
+        "version": "0.12.0",
+        "purl": "pkg:cargo/dialoguer@0.12.0",
+        "bom-ref": "cargo/dialoguer@0.12.0"
+      },
+      {
+        "type": "library",
+        "name": "dunce",
+        "version": "1.0.5",
+        "purl": "pkg:cargo/dunce@1.0.5",
+        "bom-ref": "cargo/dunce@1.0.5"
+      },
+      {
+        "type": "library",
+        "name": "etcetera",
+        "version": "0.11.0",
+        "purl": "pkg:cargo/etcetera@0.11.0",
+        "bom-ref": "cargo/etcetera@0.11.0"
+      },
+      {
+        "type": "library",
+        "name": "glob",
+        "version": "0.3.3",
+        "purl": "pkg:cargo/glob@0.3.3",
+        "bom-ref": "cargo/glob@0.3.3"
+      },
+      {
+        "type": "library",
+        "name": "hashbrown",
+        "version": "0.17.1",
+        "purl": "pkg:cargo/hashbrown@0.17.1",
+        "bom-ref": "cargo/hashbrown@0.17.1"
+      },
+      {
+        "type": "library",
+        "name": "heck",
+        "version": "0.5.0",
+        "purl": "pkg:cargo/heck@0.5.0",
+        "bom-ref": "cargo/heck@0.5.0"
+      },
+      {
+        "type": "library",
+        "name": "html-escape",
+        "version": "0.2.13",
+        "purl": "pkg:cargo/html-escape@0.2.13",
+        "bom-ref": "cargo/html-escape@0.2.13"
+      },
+      {
+        "type": "library",
+        "name": "indexmap",
+        "version": "2.13.0",
+        "purl": "pkg:cargo/indexmap@2.13.0",
+        "bom-ref": "cargo/indexmap@2.13.0"
+      },
+      {
+        "type": "library",
+        "name": "indoc",
+        "version": "2.0.7",
+        "purl": "pkg:cargo/indoc@2.0.7",
+        "bom-ref": "cargo/indoc@2.0.7"
+      },
+      {
+        "type": "library",
+        "name": "libloading",
+        "version": "0.9.0",
+        "purl": "pkg:cargo/libloading@0.9.0",
+        "bom-ref": "cargo/libloading@0.9.0"
+      },
+      {
+        "type": "library",
+        "name": "log",
+        "version": "0.4.30",
+        "purl": "pkg:cargo/log@0.4.30",
+        "bom-ref": "cargo/log@0.4.30"
+      },
+      {
+        "type": "library",
+        "name": "memchr",
+        "version": "2.8.1",
+        "purl": "pkg:cargo/memchr@2.8.1",
+        "bom-ref": "cargo/memchr@2.8.1"
+      },
+      {
+        "type": "library",
+        "name": "once_cell",
+        "version": "1.21.3",
+        "purl": "pkg:cargo/once_cell@1.21.3",
+        "bom-ref": "cargo/once_cell@1.21.3"
+      },
+      {
+        "type": "library",
+        "name": "pretty_assertions",
+        "version": "1.4.1",
+        "purl": "pkg:cargo/pretty_assertions@1.4.1",
+        "bom-ref": "cargo/pretty_assertions@1.4.1"
+      },
+      {
+        "type": "library",
+        "name": "rand",
+        "version": "0.10.1",
+        "purl": "pkg:cargo/rand@0.10.1",
+        "bom-ref": "cargo/rand@0.10.1"
+      },
+      {
+        "type": "library",
+        "name": "regex",
+        "version": "1.12.3",
+        "purl": "pkg:cargo/regex@1.12.3",
+        "bom-ref": "cargo/regex@1.12.3"
+      },
+      {
+        "type": "library",
+        "name": "regex-syntax",
+        "version": "0.8.11",
+        "purl": "pkg:cargo/regex-syntax@0.8.11",
+        "bom-ref": "cargo/regex-syntax@0.8.11"
+      },
+      {
+        "type": "library",
+        "name": "rustc-hash",
+        "version": "2.1.1",
+        "purl": "pkg:cargo/rustc-hash@2.1.1",
+        "bom-ref": "cargo/rustc-hash@2.1.1"
+      },
+      {
+        "type": "library",
+        "name": "schemars",
+        "version": "1.2.1",
+        "purl": "pkg:cargo/schemars@1.2.1",
+        "bom-ref": "cargo/schemars@1.2.1"
+      },
+      {
+        "type": "library",
+        "name": "semver",
+        "version": "1.0.27",
+        "purl": "pkg:cargo/semver@1.0.27",
+        "bom-ref": "cargo/semver@1.0.27"
+      },
+      {
+        "type": "library",
+        "name": "serde",
+        "version": "1.0.228",
+        "purl": "pkg:cargo/serde@1.0.228",
+        "bom-ref": "cargo/serde@1.0.228"
+      },
+      {
+        "type": "library",
+        "name": "serde_json",
+        "version": "1.0.150",
+        "purl": "pkg:cargo/serde_json@1.0.150",
+        "bom-ref": "cargo/serde_json@1.0.150"
+      },
+      {
+        "type": "library",
+        "name": "similar",
+        "version": "2.7.0",
+        "purl": "pkg:cargo/similar@2.7.0",
+        "bom-ref": "cargo/similar@2.7.0"
+      },
+      {
+        "type": "library",
+        "name": "streaming-iterator",
+        "version": "0.1.9",
+        "purl": "pkg:cargo/streaming-iterator@0.1.9",
+        "bom-ref": "cargo/streaming-iterator@0.1.9"
+      },
+      {
+        "type": "library",
+        "name": "tempfile",
+        "version": "3.25.0",
+        "purl": "pkg:cargo/tempfile@3.25.0",
+        "bom-ref": "cargo/tempfile@3.25.0"
+      },
+      {
+        "type": "library",
+        "name": "thiserror",
+        "version": "2.0.18",
+        "purl": "pkg:cargo/thiserror@2.0.18",
+        "bom-ref": "cargo/thiserror@2.0.18"
+      },
+      {
+        "type": "library",
+        "name": "tiny_http",
+        "version": "0.12.0",
+        "purl": "pkg:cargo/tiny_http@0.12.0",
+        "bom-ref": "cargo/tiny_http@0.12.0"
+      },
+      {
+        "type": "library",
+        "name": "topological-sort",
+        "version": "0.2.2",
+        "purl": "pkg:cargo/topological-sort@0.2.2",
+        "bom-ref": "cargo/topological-sort@0.2.2"
+      },
+      {
+        "type": "library",
+        "name": "unindent",
+        "version": "0.2.4",
+        "purl": "pkg:cargo/unindent@0.2.4",
+        "bom-ref": "cargo/unindent@0.2.4"
+      },
+      {
+        "type": "library",
+        "name": "walkdir",
+        "version": "2.5.0",
+        "purl": "pkg:cargo/walkdir@2.5.0",
+        "bom-ref": "cargo/walkdir@2.5.0"
+      },
+      {
+        "type": "library",
+        "name": "wasmparser",
+        "version": "0.244.0",
+        "purl": "pkg:cargo/wasmparser@0.244.0",
+        "bom-ref": "cargo/wasmparser@0.244.0"
+      },
+      {
+        "type": "library",
+        "name": "webbrowser",
+        "version": "1.2.1",
+        "purl": "pkg:cargo/webbrowser@1.2.1",
+        "bom-ref": "cargo/webbrowser@1.2.1"
+      },
+      {
+        "type": "library",
+        "name": "tree-sitter",
+        "version": "0.28.0",
+        "purl": "pkg:cargo/tree-sitter@0.28.0",
+        "bom-ref": "cargo/tree-sitter@0.28.0"
+      },
+      {
+        "type": "library",
+        "name": "tree-sitter-config",
+        "version": "0.28.0",
+        "purl": "pkg:cargo/tree-sitter-config@0.28.0",
+        "bom-ref": "cargo/tree-sitter-config@0.28.0"
+      },
+      {
+        "type": "library",
+        "name": "tree-sitter-generate",
+        "version": "0.28.0",
+        "purl": "pkg:cargo/tree-sitter-generate@0.28.0",
+        "bom-ref": "cargo/tree-sitter-generate@0.28.0"
+      },
+      {
+        "type": "library",
+        "name": "tree-sitter-highlight",
+        "version": "0.28.0",
+        "purl": "pkg:cargo/tree-sitter-highlight@0.28.0",
+        "bom-ref": "cargo/tree-sitter-highlight@0.28.0"
+      },
+      {
+        "type": "library",
+        "name": "tree-sitter-loader",
+        "version": "0.28.0",
+        "purl": "pkg:cargo/tree-sitter-loader@0.28.0",
+        "bom-ref": "cargo/tree-sitter-loader@0.28.0"
+      },
+      {
+        "type": "library",
+        "name": "tree-sitter-tags",
+        "version": "0.28.0",
+        "purl": "pkg:cargo/tree-sitter-tags@0.28.0",
+        "bom-ref": "cargo/tree-sitter-tags@0.28.0"
+      },
+      {
+        "type": "library",
+        "name": "tree-sitter-language",
+        "version": "0.1.8",
+        "purl": "pkg:cargo/tree-sitter-language@0.1.8",
+        "bom-ref": "cargo/tree-sitter-language@0.1.8"
+      },
+      {
+        "type": "library",
+        "name": "name",
+        "version": "rust-wasm-web-test",
+        "purl": "pkg:cargo/name@rust-wasm-web-test",
+        "bom-ref": "cargo/name@rust-wasm-web-test"
+      },
+      {
+        "type": "library",
+        "name": "path",
+        "version": "src/rust_wasm_web.rs",
+        "purl": "pkg:cargo/path@src/rust_wasm_web.rs",
+        "bom-ref": "cargo/path@src/rust_wasm_web.rs"
+      },
+      {
+        "type": "library",
+        "name": "description",
+        "version": "Rust bindings to the Tree-sitter parsing library",
+        "purl": "pkg:cargo/description@Rust bindings to the Tree-sitter parsing library",
+        "bom-ref": "cargo/description@Rust bindings to the Tree-sitter parsing library"
+      },
+      {
+        "type": "library",
+        "name": "readme",
+        "version": "binding_rust/README.md",
+        "purl": "pkg:cargo/readme@binding_rust/README.md",
+        "bom-ref": "cargo/readme@binding_rust/README.md"
+      },
+      {
+        "type": "library",
+        "name": "documentation",
+        "version": "https://docs.rs/tree-sitter",
+        "purl": "pkg:cargo/documentation@https://docs.rs/tree-sitter",
+        "bom-ref": "cargo/documentation@https://docs.rs/tree-sitter"
+      },
+      {
+        "type": "library",
+        "name": "build",
+        "version": "binding_rust/build.rs",
+        "purl": "pkg:cargo/build@binding_rust/build.rs",
+        "bom-ref": "cargo/build@binding_rust/build.rs"
+      },
+      {
+        "type": "library",
+        "name": "links",
+        "version": "tree-sitter",
+        "purl": "pkg:cargo/links@tree-sitter",
+        "bom-ref": "cargo/links@tree-sitter"
+      },
+      {
+        "type": "library",
+        "name": "package",
+        "version": "wasmtime-c-api-impl",
+        "purl": "pkg:cargo/package@wasmtime-c-api-impl",
+        "bom-ref": "cargo/package@wasmtime-c-api-impl"
+      },
+      {
+        "type": "library",
+        "name": "bindgen",
+        "version": "0.72.1",
+        "purl": "pkg:cargo/bindgen@0.72.1",
+        "bom-ref": "cargo/bindgen@0.72.1"
+      },
+      {
+        "type": "library",
+        "name": "@eslint/js",
+        "version": "^9.39.1",
+        "purl": "pkg:npm/@eslint/js@^9.39.1",
+        "bom-ref": "npm/@eslint/js@^9.39.1"
+      },
+      {
+        "type": "library",
+        "name": "@types/emscripten",
+        "version": "^1.41.6",
+        "purl": "pkg:npm/@types/emscripten@^1.41.6",
+        "bom-ref": "npm/@types/emscripten@^1.41.6"
+      },
+      {
+        "type": "library",
+        "name": "@types/node",
+        "version": "^26.6.3",
+        "purl": "pkg:npm/@types/node@^26.6.3",
+        "bom-ref": "npm/@types/node@^26.6.3"
+      },
+      {
+        "type": "library",
+        "name": "@vitest/coverage-v8",
+        "version": "^3.0.5",
+        "purl": "pkg:npm/@vitest/coverage-v8@^3.0.5",
+        "bom-ref": "npm/@vitest/coverage-v8@^3.0.5"
+      },
+      {
+        "type": "library",
+        "name": "dts-buddy",
+        "version": "^0.8.3",
+        "purl": "pkg:npm/dts-buddy@^0.8.3",
+        "bom-ref": "npm/dts-buddy@^0.8.3"
+      },
+      {
+        "type": "library",
+        "name": "esbuild",
+        "version": "^0.28.2",
+        "purl": "pkg:npm/esbuild@^0.28.2",
+        "bom-ref": "npm/esbuild@^0.28.2"
+      },
+      {
+        "type": "library",
+        "name": "eslint",
+        "version": "^10.11.0",
+        "purl": "pkg:npm/eslint@^10.11.0",
+        "bom-ref": "npm/eslint@^10.11.0"
+      },
+      {
+        "type": "library",
+        "name": "source-map",
+        "version": "^0.8.0",
+        "purl": "pkg:npm/source-map@^0.8.0",
+        "bom-ref": "npm/source-map@^0.8.0"
+      },
+      {
+        "type": "library",
+        "name": "tsx",
+        "version": "^4.23.15",
+        "purl": "pkg:npm/tsx@^4.23.15",
+        "bom-ref": "npm/tsx@^4.23.15"
+      },
+      {
+        "type": "library",
+        "name": "typescript",
+        "version": "^5.7.3",
+        "purl": "pkg:npm/typescript@^5.7.3",
+        "bom-ref": "npm/typescript@^5.7.3"
+      },
+      {
+        "type": "library",
+        "name": "typescript-eslint",
+        "version": "^8.71.0",
+        "purl": "pkg:npm/typescript-eslint@^8.71.0",
+        "bom-ref": "npm/typescript-eslint@^8.71.0"
+      },
+      {
+        "type": "library",
+        "name": "vitest",
+        "version": "^3.0.5",
+        "purl": "pkg:npm/vitest@^3.0.5",
+        "bom-ref": "npm/vitest@^3.0.5"
+      },
+      {
+        "type": "library",
+        "name": "notify",
+        "version": "8.2.0",
+        "purl": "pkg:cargo/notify@8.2.0",
+        "bom-ref": "cargo/notify@8.2.0"
+      },
+      {
+        "type": "library",
+        "name": "notify-debouncer-full",
+        "version": "0.7.0",
+        "purl": "pkg:cargo/notify-debouncer-full@0.7.0",
+        "bom-ref": "cargo/notify-debouncer-full@0.7.0"
+      },
+      {
+        "type": "library",
+        "name": "bitflags",
+        "version": "2.11.1",
+        "purl": "pkg:cargo/bitflags@2.11.1",
+        "bom-ref": "cargo/bitflags@2.11.1"
+      },
+      {
+        "type": "library",
+        "name": "pathdiff",
+        "version": "0.2.3",
+        "purl": "pkg:cargo/pathdiff@0.2.3",
+        "bom-ref": "cargo/pathdiff@0.2.3"
+      },
+      {
+        "type": "library",
+        "name": "rquickjs",
+        "version": "0.14",
+        "purl": "pkg:cargo/rquickjs@0.14",
+        "bom-ref": "cargo/rquickjs@0.14"
+      },
+      {
+        "type": "library",
+        "name": "encoding_rs",
+        "version": "0.8.35",
+        "purl": "pkg:cargo/encoding_rs@0.8.35",
+        "bom-ref": "cargo/encoding_rs@0.8.35"
+      },
+      {
+        "type": "library",
+        "name": "widestring",
+        "version": "1.2.1",
+        "purl": "pkg:cargo/widestring@1.2.1",
+        "bom-ref": "cargo/widestring@1.2.1"
+      },
+      {
+        "type": "library",
+        "name": "pkg-fmt",
+        "version": "zip",
+        "purl": "pkg:cargo/pkg-fmt@zip",
+        "bom-ref": "cargo/pkg-fmt@zip"
+      },
+      {
+        "type": "library",
+        "name": "pkg-url",
+        "version": "{ repo }/releases/download/v{ version }/{ name }-linux-arm64{ archive-suffix }",
+        "purl": "pkg:cargo/pkg-url@{ repo }/releases/download/v{ version }/{ name }-linux-arm64{ archive-suffix }",
+        "bom-ref": "cargo/pkg-url@{ repo }/releases/download/v{ version }/{ name }-linux-arm64{ archive-suffix }"
+      },
+      {
+        "type": "library",
+        "name": "proc-macro2",
+        "version": "1.0.93",
+        "purl": "pkg:cargo/proc-macro2@1.0.93",
+        "bom-ref": "cargo/proc-macro2@1.0.93"
+      },
+      {
+        "type": "library",
+        "name": "quote",
+        "version": "1.0.38",
+        "purl": "pkg:cargo/quote@1.0.38",
+        "bom-ref": "cargo/quote@1.0.38"
+      },
+      {
+        "type": "library",
+        "name": "syn",
+        "version": "2.0.96",
+        "purl": "pkg:cargo/syn@2.0.96",
+        "bom-ref": "cargo/syn@2.0.96"
+      },
+      {
+        "type": "library",
+        "name": "github.com/tree-sitter/go-tree-sitter",
+        "version": "v0.24.0",
+        "purl": "pkg:golang/github.com/tree-sitter/go-tree-sitter@v0.24.0",
+        "bom-ref": "go/github.com/tree-sitter/go-tree-sitter@v0.24.0"
+      },
+      {
+        "type": "library",
+        "name": "node-addon-api",
+        "version": "^8.5.0",
+        "purl": "pkg:npm/node-addon-api@^8.5.0",
+        "bom-ref": "npm/node-addon-api@^8.5.0"
+      },
+      {
+        "type": "library",
+        "name": "node-gyp-build",
+        "version": "^4.8.4",
+        "purl": "pkg:npm/node-gyp-build@^4.8.4",
+        "bom-ref": "npm/node-gyp-build@^4.8.4"
+      },
+      {
+        "type": "library",
+        "name": "prebuildify",
+        "version": "^6.0.1",
+        "purl": "pkg:npm/prebuildify@^6.0.1",
+        "bom-ref": "npm/prebuildify@^6.0.1"
+      },
+      {
+        "type": "library",
+        "name": "tree-sitter",
+        "version": "^0.25.0",
+        "purl": "pkg:npm/tree-sitter@^0.25.0",
+        "bom-ref": "npm/tree-sitter@^0.25.0"
+      },
+      {
+        "type": "library",
+        "name": "tree-sitter-cli",
+        "version": "^CLI_VERSION",
+        "purl": "pkg:npm/tree-sitter-cli@^CLI_VERSION",
+        "bom-ref": "npm/tree-sitter-cli@^CLI_VERSION"
+      },
+      {
+        "type": "library",
+        "name": "-std",
+        "version": "=c11",
+        "purl": "pkg:pypi/-std@c11",
+        "bom-ref": "pypi/-std@=c11"
+      },
+      {
+        "type": "library",
+        "name": "-fvisibility",
+        "version": "=hidden",
+        "purl": "pkg:pypi/-fvisibility@hidden",
+        "bom-ref": "pypi/-fvisibility@=hidden"
+      },
+      {
+        "type": "library",
+        "name": "eslint-plugin-jsdoc",
+        "version": "^62.7.0",
+        "purl": "pkg:npm/eslint-plugin-jsdoc@^62.7.0",
+        "bom-ref": "npm/eslint-plugin-jsdoc@^62.7.0"
+      }
+    ]
+  },
+  "elapsed_seconds": 14.64
+}

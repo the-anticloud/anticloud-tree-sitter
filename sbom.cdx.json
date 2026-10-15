@@ -1,0 +1,887 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.5",
+ "serialNumber": "urn:uuid:c0c009ff-121b-5c3c-a541-90c6e9087366",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-10-06T06:56:54Z",
+  "component": {
+   "type": "application",
+   "name": "TREE_SITTER",
+   "version": "83b357604d34",
+   "bom-ref": "pkg:generic/anticloud/TREE_SITTER@83b357604d34",
+   "purl": "pkg:generic/anticloud/TREE_SITTER@83b357604d34",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ]
+  },
+  "properties": [
+   {
+    "name": "anticloud:source-commit",
+    "value": "REMOVED_CONTAMINATED_SHA_PENDING_API_RESOLVE"
+   },
+   {
+    "name": "anticloud:source-url",
+    "value": "https://github.com/the-anticloud/OPENMRS_CORE.git"
+   },
+   {
+    "name": "anticloud:tier",
+    "value": "tier-agent"
+   }
+  ]
+ },
+ "components": [
+  {
+   "type": "library",
+   "name": "resolver",
+   "version": "2",
+   "purl": "pkg:cargo/resolver@2",
+   "bom-ref": "cargo/resolver@2"
+  },
+  {
+   "type": "library",
+   "name": "edition",
+   "version": "2024",
+   "purl": "pkg:cargo/edition@2024",
+   "bom-ref": "cargo/edition@2024"
+  },
+  {
+   "type": "library",
+   "name": "homepage",
+   "version": "https://tree-sitter.github.io/tree-sitter",
+   "purl": "pkg:cargo/homepage@https://tree-sitter.github.io/tree-sitter",
+   "bom-ref": "cargo/homepage@https://tree-sitter.github.io/tree-sitter"
+  },
+  {
+   "type": "library",
+   "name": "license",
+   "version": "MIT",
+   "purl": "pkg:cargo/license@MIT",
+   "bom-ref": "cargo/license@MIT"
+  },
+  {
+   "type": "library",
+   "name": "repository",
+   "version": "https://github.com/tree-sitter/tree-sitter",
+   "purl": "pkg:cargo/repository@https://github.com/tree-sitter/tree-sitter",
+   "bom-ref": "cargo/repository@https://github.com/tree-sitter/tree-sitter"
+  },
+  {
+   "type": "library",
+   "name": "rust-version",
+   "version": "1.90",
+   "purl": "pkg:cargo/rust-version@1.90",
+   "bom-ref": "cargo/rust-version@1.90"
+  },
+  {
+   "type": "library",
+   "name": "version",
+   "version": "0.28.0",
+   "purl": "pkg:cargo/version@0.28.0",
+   "bom-ref": "cargo/version@0.28.0"
+  },
+  {
+   "type": "library",
+   "name": "dbg_macro",
+   "version": "deny",
+   "purl": "pkg:cargo/dbg_macro@deny",
+   "bom-ref": "cargo/dbg_macro@deny"
+  },
+  {
+   "type": "library",
+   "name": "disallowed_methods",
+   "version": "deny",
+   "purl": "pkg:cargo/disallowed_methods@deny",
+   "bom-ref": "cargo/disallowed_methods@deny"
+  },
+  {
+   "type": "library",
+   "name": "todo",
+   "version": "deny",
+   "purl": "pkg:cargo/todo@deny",
+   "bom-ref": "cargo/todo@deny"
+  },
+  {
+   "type": "library",
+   "name": "cast_possible_truncation",
+   "version": "allow",
+   "purl": "pkg:cargo/cast_possible_truncation@allow",
+   "bom-ref": "cargo/cast_possible_truncation@allow"
+  },
+  {
+   "type": "library",
+   "name": "cast_possible_wrap",
+   "version": "allow",
+   "purl": "pkg:cargo/cast_possible_wrap@allow",
+   "bom-ref": "cargo/cast_possible_wrap@allow"
+  },
+  {
+   "type": "library",
+   "name": "cast_precision_loss",
+   "version": "allow",
+   "purl": "pkg:cargo/cast_precision_loss@allow",
+   "bom-ref": "cargo/cast_precision_loss@allow"
+  },
+  {
+   "type": "library",
+   "name": "cast_sign_loss",
+   "version": "allow",
+   "purl": "pkg:cargo/cast_sign_loss@allow",
+   "bom-ref": "cargo/cast_sign_loss@allow"
+  },
+  {
+   "type": "library",
+   "name": "if_not_else",
+   "version": "allow",
+   "purl": "pkg:cargo/if_not_else@allow",
+   "bom-ref": "cargo/if_not_else@allow"
+  },
+  {
+   "type": "library",
+   "name": "items_after_statements",
+   "version": "allow",
+   "purl": "pkg:cargo/items_after_statements@allow",
+   "bom-ref": "cargo/items_after_statements@allow"
+  },
+  {
+   "type": "library",
+   "name": "missing_errors_doc",
+   "version": "allow",
+   "purl": "pkg:cargo/missing_errors_doc@allow",
+   "bom-ref": "cargo/missing_errors_doc@allow"
+  },
+  {
+   "type": "library",
+   "name": "missing_panics_doc",
+   "version": "allow",
+   "purl": "pkg:cargo/missing_panics_doc@allow",
+   "bom-ref": "cargo/missing_panics_doc@allow"
+  },
+  {
+   "type": "library",
+   "name": "multiple_crate_versions",
+   "version": "allow",
+   "purl": "pkg:cargo/multiple_crate_versions@allow",
+   "bom-ref": "cargo/multiple_crate_versions@allow"
+  },
+  {
+   "type": "library",
+   "name": "option_if_let_else",
+   "version": "allow",
+   "purl": "pkg:cargo/option_if_let_else@allow",
+   "bom-ref": "cargo/option_if_let_else@allow"
+  },
+  {
+   "type": "library",
+   "name": "similar_names",
+   "version": "allow",
+   "purl": "pkg:cargo/similar_names@allow",
+   "bom-ref": "cargo/similar_names@allow"
+  },
+  {
+   "type": "library",
+   "name": "string_lit_as_bytes",
+   "version": "allow",
+   "purl": "pkg:cargo/string_lit_as_bytes@allow",
+   "bom-ref": "cargo/string_lit_as_bytes@allow"
+  },
+  {
+   "type": "library",
+   "name": "struct_excessive_bools",
+   "version": "allow",
+   "purl": "pkg:cargo/struct_excessive_bools@allow",
+   "bom-ref": "cargo/struct_excessive_bools@allow"
+  },
+  {
+   "type": "library",
+   "name": "too_many_lines",
+   "version": "allow",
+   "purl": "pkg:cargo/too_many_lines@allow",
+   "bom-ref": "cargo/too_many_lines@allow"
+  },
+  {
+   "type": "library",
+   "name": "tuple_array_conversions",
+   "version": "allow",
+   "purl": "pkg:cargo/tuple_array_conversions@allow",
+   "bom-ref": "cargo/tuple_array_conversions@allow"
+  },
+  {
+   "type": "library",
+   "name": "mismatched_lifetime_syntaxes",
+   "version": "allow",
+   "purl": "pkg:cargo/mismatched_lifetime_syntaxes@allow",
+   "bom-ref": "cargo/mismatched_lifetime_syntaxes@allow"
+  },
+  {
+   "type": "library",
+   "name": "inherits",
+   "version": "release",
+   "purl": "pkg:cargo/inherits@release",
+   "bom-ref": "cargo/inherits@release"
+  },
+  {
+   "type": "library",
+   "name": "opt-level",
+   "version": "s",
+   "purl": "pkg:cargo/opt-level@s",
+   "bom-ref": "cargo/opt-level@s"
+  },
+  {
+   "type": "library",
+   "name": "ansi_colours",
+   "version": "1.2.3",
+   "purl": "pkg:cargo/ansi_colours@1.2.3",
+   "bom-ref": "cargo/ansi_colours@1.2.3"
+  },
+  {
+   "type": "library",
+   "name": "anstyle",
+   "version": "1.0.14",
+   "purl": "pkg:cargo/anstyle@1.0.14",
+   "bom-ref": "cargo/anstyle@1.0.14"
+  },
+  {
+   "type": "library",
+   "name": "anyhow",
+   "version": "1.0.102",
+   "purl": "pkg:cargo/anyhow@1.0.102",
+   "bom-ref": "cargo/anyhow@1.0.102"
+  },
+  {
+   "type": "library",
+   "name": "bstr",
+   "version": "1.12.1",
+   "purl": "pkg:cargo/bstr@1.12.1",
+   "bom-ref": "cargo/bstr@1.12.1"
+  },
+  {
+   "type": "library",
+   "name": "cc",
+   "version": "1.2.63",
+   "purl": "pkg:cargo/cc@1.2.63",
+   "bom-ref": "cargo/cc@1.2.63"
+  },
+  {
+   "type": "library",
+   "name": "clap",
+   "version": "4.5.58",
+   "purl": "pkg:cargo/clap@4.5.58",
+   "bom-ref": "cargo/clap@4.5.58"
+  },
+  {
+   "type": "library",
+   "name": "clap_complete",
+   "version": "4.6.3",
+   "purl": "pkg:cargo/clap_complete@4.6.3",
+   "bom-ref": "cargo/clap_complete@4.6.3"
+  },
+  {
+   "type": "library",
+   "name": "clap_complete_nushell",
+   "version": "4.5.10",
+   "purl": "pkg:cargo/clap_complete_nushell@4.5.10",
+   "bom-ref": "cargo/clap_complete_nushell@4.5.10"
+  },
+  {
+   "type": "library",
+   "name": "crc32fast",
+   "version": "1.5.0",
+   "purl": "pkg:cargo/crc32fast@1.5.0",
+   "bom-ref": "cargo/crc32fast@1.5.0"
+  },
+  {
+   "type": "library",
+   "name": "ctor",
+   "version": "0.6.3",
+   "purl": "pkg:cargo/ctor@0.6.3",
+   "bom-ref": "cargo/ctor@0.6.3"
+  },
+  {
+   "type": "library",
+   "name": "ctrlc",
+   "version": "3.5.2",
+   "purl": "pkg:cargo/ctrlc@3.5.2",
+   "bom-ref": "cargo/ctrlc@3.5.2"
+  },
+  {
+   "type": "library",
+   "name": "dialoguer",
+   "version": "0.12.0",
+   "purl": "pkg:cargo/dialoguer@0.12.0",
+   "bom-ref": "cargo/dialoguer@0.12.0"
+  },
+  {
+   "type": "library",
+   "name": "dunce",
+   "version": "1.0.5",
+   "purl": "pkg:cargo/dunce@1.0.5",
+   "bom-ref": "cargo/dunce@1.0.5"
+  },
+  {
+   "type": "library",
+   "name": "etcetera",
+   "version": "0.11.0",
+   "purl": "pkg:cargo/etcetera@0.11.0",
+   "bom-ref": "cargo/etcetera@0.11.0"
+  },
+  {
+   "type": "library",
+   "name": "glob",
+   "version": "0.3.3",
+   "purl": "pkg:cargo/glob@0.3.3",
+   "bom-ref": "cargo/glob@0.3.3"
+  },
+  {
+   "type": "library",
+   "name": "hashbrown",
+   "version": "0.17.1",
+   "purl": "pkg:cargo/hashbrown@0.17.1",
+   "bom-ref": "cargo/hashbrown@0.17.1"
+  },
+  {
+   "type": "library",
+   "name": "heck",
+   "version": "0.5.0",
+   "purl": "pkg:cargo/heck@0.5.0",
+   "bom-ref": "cargo/heck@0.5.0"
+  },
+  {
+   "type": "library",
+   "name": "html-escape",
+   "version": "0.2.13",
+   "purl": "pkg:cargo/html-escape@0.2.13",
+   "bom-ref": "cargo/html-escape@0.2.13"
+  },
+  {
+   "type": "library",
+   "name": "indexmap",
+   "version": "2.13.0",
+   "purl": "pkg:cargo/indexmap@2.13.0",
+   "bom-ref": "cargo/indexmap@2.13.0"
+  },
+  {
+   "type": "library",
+   "name": "indoc",
+   "version": "2.0.7",
+   "purl": "pkg:cargo/indoc@2.0.7",
+   "bom-ref": "cargo/indoc@2.0.7"
+  },
+  {
+   "type": "library",
+   "name": "libloading",
+   "version": "0.9.0",
+   "purl": "pkg:cargo/libloading@0.9.0",
+   "bom-ref": "cargo/libloading@0.9.0"
+  },
+  {
+   "type": "library",
+   "name": "log",
+   "version": "0.4.30",
+   "purl": "pkg:cargo/log@0.4.30",
+   "bom-ref": "cargo/log@0.4.30"
+  },
+  {
+   "type": "library",
+   "name": "memchr",
+   "version": "2.8.1",
+   "purl": "pkg:cargo/memchr@2.8.1",
+   "bom-ref": "cargo/memchr@2.8.1"
+  },
+  {
+   "type": "library",
+   "name": "once_cell",
+   "version": "1.21.3",
+   "purl": "pkg:cargo/once_cell@1.21.3",
+   "bom-ref": "cargo/once_cell@1.21.3"
+  },
+  {
+   "type": "library",
+   "name": "pretty_assertions",
+   "version": "1.4.1",
+   "purl": "pkg:cargo/pretty_assertions@1.4.1",
+   "bom-ref": "cargo/pretty_assertions@1.4.1"
+  },
+  {
+   "type": "library",
+   "name": "rand",
+   "version": "0.10.1",
+   "purl": "pkg:cargo/rand@0.10.1",
+   "bom-ref": "cargo/rand@0.10.1"
+  },
+  {
+   "type": "library",
+   "name": "regex",
+   "version": "1.12.3",
+   "purl": "pkg:cargo/regex@1.12.3",
+   "bom-ref": "cargo/regex@1.12.3"
+  },
+  {
+   "type": "library",
+   "name": "regex-syntax",
+   "version": "0.8.11",
+   "purl": "pkg:cargo/regex-syntax@0.8.11",
+   "bom-ref": "cargo/regex-syntax@0.8.11"
+  },
+  {
+   "type": "library",
+   "name": "rustc-hash",
+   "version": "2.1.1",
+   "purl": "pkg:cargo/rustc-hash@2.1.1",
+   "bom-ref": "cargo/rustc-hash@2.1.1"
+  },
+  {
+   "type": "library",
+   "name": "schemars",
+   "version": "1.2.1",
+   "purl": "pkg:cargo/schemars@1.2.1",
+   "bom-ref": "cargo/schemars@1.2.1"
+  },
+  {
+   "type": "library",
+   "name": "semver",
+   "version": "1.0.27",
+   "purl": "pkg:cargo/semver@1.0.27",
+   "bom-ref": "cargo/semver@1.0.27"
+  },
+  {
+   "type": "library",
+   "name": "serde",
+   "version": "1.0.228",
+   "purl": "pkg:cargo/serde@1.0.228",
+   "bom-ref": "cargo/serde@1.0.228"
+  },
+  {
+   "type": "library",
+   "name": "serde_json",
+   "version": "1.0.150",
+   "purl": "pkg:cargo/serde_json@1.0.150",
+   "bom-ref": "cargo/serde_json@1.0.150"
+  },
+  {
+   "type": "library",
+   "name": "similar",
+   "version": "2.7.0",
+   "purl": "pkg:cargo/similar@2.7.0",
+   "bom-ref": "cargo/similar@2.7.0"
+  },
+  {
+   "type": "library",
+   "name": "streaming-iterator",
+   "version": "0.1.9",
+   "purl": "pkg:cargo/streaming-iterator@0.1.9",
+   "bom-ref": "cargo/streaming-iterator@0.1.9"
+  },
+  {
+   "type": "library",
+   "name": "tempfile",
+   "version": "3.25.0",
+   "purl": "pkg:cargo/tempfile@3.25.0",
+   "bom-ref": "cargo/tempfile@3.25.0"
+  },
+  {
+   "type": "library",
+   "name": "thiserror",
+   "version": "2.0.18",
+   "purl": "pkg:cargo/thiserror@2.0.18",
+   "bom-ref": "cargo/thiserror@2.0.18"
+  },
+  {
+   "type": "library",
+   "name": "tiny_http",
+   "version": "0.12.0",
+   "purl": "pkg:cargo/tiny_http@0.12.0",
+   "bom-ref": "cargo/tiny_http@0.12.0"
+  },
+  {
+   "type": "library",
+   "name": "topological-sort",
+   "version": "0.2.2",
+   "purl": "pkg:cargo/topological-sort@0.2.2",
+   "bom-ref": "cargo/topological-sort@0.2.2"
+  },
+  {
+   "type": "library",
+   "name": "unindent",
+   "version": "0.2.4",
+   "purl": "pkg:cargo/unindent@0.2.4",
+   "bom-ref": "cargo/unindent@0.2.4"
+  },
+  {
+   "type": "library",
+   "name": "walkdir",
+   "version": "2.5.0",
+   "purl": "pkg:cargo/walkdir@2.5.0",
+   "bom-ref": "cargo/walkdir@2.5.0"
+  },
+  {
+   "type": "library",
+   "name": "wasmparser",
+   "version": "0.244.0",
+   "purl": "pkg:cargo/wasmparser@0.244.0",
+   "bom-ref": "cargo/wasmparser@0.244.0"
+  },
+  {
+   "type": "library",
+   "name": "webbrowser",
+   "version": "1.2.1",
+   "purl": "pkg:cargo/webbrowser@1.2.1",
+   "bom-ref": "cargo/webbrowser@1.2.1"
+  },
+  {
+   "type": "library",
+   "name": "tree-sitter",
+   "version": "0.28.0",
+   "purl": "pkg:cargo/tree-sitter@0.28.0",
+   "bom-ref": "cargo/tree-sitter@0.28.0"
+  },
+  {
+   "type": "library",
+   "name": "tree-sitter-config",
+   "version": "0.28.0",
+   "purl": "pkg:cargo/tree-sitter-config@0.28.0",
+   "bom-ref": "cargo/tree-sitter-config@0.28.0"
+  },
+  {
+   "type": "library",
+   "name": "tree-sitter-generate",
+   "version": "0.28.0",
+   "purl": "pkg:cargo/tree-sitter-generate@0.28.0",
+   "bom-ref": "cargo/tree-sitter-generate@0.28.0"
+  },
+  {
+   "type": "library",
+   "name": "tree-sitter-highlight",
+   "version": "0.28.0",
+   "purl": "pkg:cargo/tree-sitter-highlight@0.28.0",
+   "bom-ref": "cargo/tree-sitter-highlight@0.28.0"
+  },
+  {
+   "type": "library",
+   "name": "tree-sitter-loader",
+   "version": "0.28.0",
+   "purl": "pkg:cargo/tree-sitter-loader@0.28.0",
+   "bom-ref": "cargo/tree-sitter-loader@0.28.0"
+  },
+  {
+   "type": "library",
+   "name": "tree-sitter-tags",
+   "version": "0.28.0",
+   "purl": "pkg:cargo/tree-sitter-tags@0.28.0",
+   "bom-ref": "cargo/tree-sitter-tags@0.28.0"
+  },
+  {
+   "type": "library",
+   "name": "tree-sitter-language",
+   "version": "0.1.8",
+   "purl": "pkg:cargo/tree-sitter-language@0.1.8",
+   "bom-ref": "cargo/tree-sitter-language@0.1.8"
+  },
+  {
+   "type": "library",
+   "name": "name",
+   "version": "rust-wasm-web-test",
+   "purl": "pkg:cargo/name@rust-wasm-web-test",
+   "bom-ref": "cargo/name@rust-wasm-web-test"
+  },
+  {
+   "type": "library",
+   "name": "path",
+   "version": "src/rust_wasm_web.rs",
+   "purl": "pkg:cargo/path@src/rust_wasm_web.rs",
+   "bom-ref": "cargo/path@src/rust_wasm_web.rs"
+  },
+  {
+   "type": "library",
+   "name": "description",
+   "version": "Rust bindings to the Tree-sitter parsing library",
+   "purl": "pkg:cargo/description@Rust bindings to the Tree-sitter parsing library",
+   "bom-ref": "cargo/description@Rust bindings to the Tree-sitter parsing library"
+  },
+  {
+   "type": "library",
+   "name": "readme",
+   "version": "binding_rust/README.md",
+   "purl": "pkg:cargo/readme@binding_rust/README.md",
+   "bom-ref": "cargo/readme@binding_rust/README.md"
+  },
+  {
+   "type": "library",
+   "name": "documentation",
+   "version": "https://docs.rs/tree-sitter",
+   "purl": "pkg:cargo/documentation@https://docs.rs/tree-sitter",
+   "bom-ref": "cargo/documentation@https://docs.rs/tree-sitter"
+  },
+  {
+   "type": "library",
+   "name": "build",
+   "version": "binding_rust/build.rs",
+   "purl": "pkg:cargo/build@binding_rust/build.rs",
+   "bom-ref": "cargo/build@binding_rust/build.rs"
+  },
+  {
+   "type": "library",
+   "name": "links",
+   "version": "tree-sitter",
+   "purl": "pkg:cargo/links@tree-sitter",
+   "bom-ref": "cargo/links@tree-sitter"
+  },
+  {
+   "type": "library",
+   "name": "package",
+   "version": "wasmtime-c-api-impl",
+   "purl": "pkg:cargo/package@wasmtime-c-api-impl",
+   "bom-ref": "cargo/package@wasmtime-c-api-impl"
+  },
+  {
+   "type": "library",
+   "name": "bindgen",
+   "version": "0.72.1",
+   "purl": "pkg:cargo/bindgen@0.72.1",
+   "bom-ref": "cargo/bindgen@0.72.1"
+  },
+  {
+   "type": "library",
+   "name": "@eslint/js",
+   "version": "^9.39.1",
+   "purl": "pkg:npm/@eslint/js@^9.39.1",
+   "bom-ref": "npm/@eslint/js@^9.39.1"
+  },
+  {
+   "type": "library",
+   "name": "@types/emscripten",
+   "version": "^1.41.6",
+   "purl": "pkg:npm/@types/emscripten@^1.41.6",
+   "bom-ref": "npm/@types/emscripten@^1.41.6"
+  },
+  {
+   "type": "library",
+   "name": "@types/node",
+   "version": "^26.6.3",
+   "purl": "pkg:npm/@types/node@^26.6.3",
+   "bom-ref": "npm/@types/node@^26.6.3"
+  },
+  {
+   "type": "library",
+   "name": "@vitest/coverage-v8",
+   "version": "^3.0.5",
+   "purl": "pkg:npm/@vitest/coverage-v8@^3.0.5",
+   "bom-ref": "npm/@vitest/coverage-v8@^3.0.5"
+  },
+  {
+   "type": "library",
+   "name": "dts-buddy",
+   "version": "^0.8.3",
+   "purl": "pkg:npm/dts-buddy@^0.8.3",
+   "bom-ref": "npm/dts-buddy@^0.8.3"
+  },
+  {
+   "type": "library",
+   "name": "esbuild",
+   "version": "^0.28.2",
+   "purl": "pkg:npm/esbuild@^0.28.2",
+   "bom-ref": "npm/esbuild@^0.28.2"
+  },
+  {
+   "type": "library",
+   "name": "eslint",
+   "version": "^10.11.0",
+   "purl": "pkg:npm/eslint@^10.11.0",
+   "bom-ref": "npm/eslint@^10.11.0"
+  },
+  {
+   "type": "library",
+   "name": "source-map",
+   "version": "^0.8.0",
+   "purl": "pkg:npm/source-map@^0.8.0",
+   "bom-ref": "npm/source-map@^0.8.0"
+  },
+  {
+   "type": "library",
+   "name": "tsx",
+   "version": "^4.23.15",
+   "purl": "pkg:npm/tsx@^4.23.15",
+   "bom-ref": "npm/tsx@^4.23.15"
+  },
+  {
+   "type": "library",
+   "name": "typescript",
+   "version": "^5.7.3",
+   "purl": "pkg:npm/typescript@^5.7.3",
+   "bom-ref": "npm/typescript@^5.7.3"
+  },
+  {
+   "type": "library",
+   "name": "typescript-eslint",
+   "version": "^8.71.0",
+   "purl": "pkg:npm/typescript-eslint@^8.71.0",
+   "bom-ref": "npm/typescript-eslint@^8.71.0"
+  },
+  {
+   "type": "library",
+   "name": "vitest",
+   "version": "^3.0.5",
+   "purl": "pkg:npm/vitest@^3.0.5",
+   "bom-ref": "npm/vitest@^3.0.5"
+  },
+  {
+   "type": "library",
+   "name": "notify",
+   "version": "8.2.0",
+   "purl": "pkg:cargo/notify@8.2.0",
+   "bom-ref": "cargo/notify@8.2.0"
+  },
+  {
+   "type": "library",
+   "name": "notify-debouncer-full",
+   "version": "0.7.0",
+   "purl": "pkg:cargo/notify-debouncer-full@0.7.0",
+   "bom-ref": "cargo/notify-debouncer-full@0.7.0"
+  },
+  {
+   "type": "library",
+   "name": "bitflags",
+   "version": "2.11.1",
+   "purl": "pkg:cargo/bitflags@2.11.1",
+   "bom-ref": "cargo/bitflags@2.11.1"
+  },
+  {
+   "type": "library",
+   "name": "pathdiff",
+   "version": "0.2.3",
+   "purl": "pkg:cargo/pathdiff@0.2.3",
+   "bom-ref": "cargo/pathdiff@0.2.3"
+  },
+  {
+   "type": "library",
+   "name": "rquickjs",
+   "version": "0.14",
+   "purl": "pkg:cargo/rquickjs@0.14",
+   "bom-ref": "cargo/rquickjs@0.14"
+  },
+  {
+   "type": "library",
+   "name": "encoding_rs",
+   "version": "0.8.35",
+   "purl": "pkg:cargo/encoding_rs@0.8.35",
+   "bom-ref": "cargo/encoding_rs@0.8.35"
+  },
+  {
+   "type": "library",
+   "name": "widestring",
+   "version": "1.2.1",
+   "purl": "pkg:cargo/widestring@1.2.1",
+   "bom-ref": "cargo/widestring@1.2.1"
+  },
+  {
+   "type": "library",
+   "name": "pkg-fmt",
+   "version": "zip",
+   "purl": "pkg:cargo/pkg-fmt@zip",
+   "bom-ref": "cargo/pkg-fmt@zip"
+  },
+  {
+   "type": "library",
+   "name": "pkg-url",
+   "version": "{ repo }/releases/download/v{ version }/{ name }-linux-arm64{ archive-suffix }",
+   "purl": "pkg:cargo/pkg-url@{ repo }/releases/download/v{ version }/{ name }-linux-arm64{ archive-suffix }",
+   "bom-ref": "cargo/pkg-url@{ repo }/releases/download/v{ version }/{ name }-linux-arm64{ archive-suffix }"
+  },
+  {
+   "type": "library",
+   "name": "proc-macro2",
+   "version": "1.0.93",
+   "purl": "pkg:cargo/proc-macro2@1.0.93",
+   "bom-ref": "cargo/proc-macro2@1.0.93"
+  },
+  {
+   "type": "library",
+   "name": "quote",
+   "version": "1.0.38",
+   "purl": "pkg:cargo/quote@1.0.38",
+   "bom-ref": "cargo/quote@1.0.38"
+  },
+  {
+   "type": "library",
+   "name": "syn",
+   "version": "2.0.96",
+   "purl": "pkg:cargo/syn@2.0.96",
+   "bom-ref": "cargo/syn@2.0.96"
+  },
+  {
+   "type": "library",
+   "name": "github.com/tree-sitter/go-tree-sitter",
+   "version": "v0.24.0",
+   "purl": "pkg:golang/github.com/tree-sitter/go-tree-sitter@v0.24.0",
+   "bom-ref": "go/github.com/tree-sitter/go-tree-sitter@v0.24.0"
+  },
+  {
+   "type": "library",
+   "name": "node-addon-api",
+   "version": "^8.5.0",
+   "purl": "pkg:npm/node-addon-api@^8.5.0",
+   "bom-ref": "npm/node-addon-api@^8.5.0"
+  },
+  {
+   "type": "library",
+   "name": "node-gyp-build",
+   "version": "^4.8.4",
+   "purl": "pkg:npm/node-gyp-build@^4.8.4",
+   "bom-ref": "npm/node-gyp-build@^4.8.4"
+  },
+  {
+   "type": "library",
+   "name": "prebuildify",
+   "version": "^6.0.1",
+   "purl": "pkg:npm/prebuildify@^6.0.1",
+   "bom-ref": "npm/prebuildify@^6.0.1"
+  },
+  {
+   "type": "library",
+   "name": "tree-sitter",
+   "version": "^0.25.0",
+   "purl": "pkg:npm/tree-sitter@^0.25.0",
+   "bom-ref": "npm/tree-sitter@^0.25.0"
+  },
+  {
+   "type": "library",
+   "name": "tree-sitter-cli",
+   "version": "^CLI_VERSION",
+   "purl": "pkg:npm/tree-sitter-cli@^CLI_VERSION",
+   "bom-ref": "npm/tree-sitter-cli@^CLI_VERSION"
+  },
+  {
+   "type": "library",
+   "name": "-std",
+   "version": "=c11",
+   "purl": "pkg:pypi/-std@c11",
+   "bom-ref": "pypi/-std@=c11"
+  },
+  {
+   "type": "library",
+   "name": "-fvisibility",
+   "version": "=hidden",
+   "purl": "pkg:pypi/-fvisibility@hidden",
+   "bom-ref": "pypi/-fvisibility@=hidden"
+  },
+  {
+   "type": "library",
+   "name": "eslint-plugin-jsdoc",
+   "version": "^62.7.0",
+   "purl": "pkg:npm/eslint-plugin-jsdoc@^62.7.0",
+   "bom-ref": "npm/eslint-plugin-jsdoc@^62.7.0"
+  }
+ ],
+ "source": {
+  "git": {
+   "head": null,
+   "url": null,
+   "sha_unverified": true,
+   "note": "contamination removed; resolve via GitHub API before quoting"
+  }
+ }
+}
