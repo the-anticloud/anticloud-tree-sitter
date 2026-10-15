@@ -1,263 +1,66 @@
-# TREE SITTER
+# TREE_SITTER
 
-![license](https://img.shields.io/badge/license-MIT-blue) ![offline-first](https://img.shields.io/badge/offline--first-air--gap-green) ![audit](https://img.shields.io/badge/audit-SHA3--256-orange) ![category](https://img.shields.io/badge/category-software_development-lightgrey)
+> Tree-sitter is a parser generator tool and an incremental parsing library. It can build a concrete syntax tree for a source file and efficiently update the syntax tree as the source file is edited. Tree-sitter aims to be:
 
-> Anticloud-hardened packaging of the upstream project `TREE_SITTER` in category **SOFTWARE DEVELOPMENT**. Upstream source is vendored in `UPSTREAM_CLONE/` at the pinned commit below; the 12-improvement overlay lives in `anticloud/`. Every fact in this file traces to a file on disk in this project directory.
+**Category:** SOFTWARE_DEVELOPMENT · **Ecosystem:** unknown · **Vendored upstream:** https://github.com/tree-sitter/tree-sitter · **Pinned commit:** `e9930e0915685efb98a9d325b8f23dfdb9e99559` · **Vendor:** Anticloud FZ LLE
 
-**Category:** SOFTWARE DEVELOPMENT · **Upstream:** https://github.com/tree-sitter/tree-sitter · **Upstream pin:** `e9930e0915685efb98a9d325b8f23dfdb9e99559` · **Vendor:** Anticloud FZ LLE
-
----
-
-## What This Project Does
-
-# tree-sitter
-
-[![DOI](https://zenodo.org/badge/14164618.svg)](https://zenodo.org/badge/latestdoi/14164618)
-[![discord][discord]](https://discord.gg/w7nTvsVJhm)
-[![matrix][matrix]](https://matrix.to/#/#tree-sitter-chat:matrix.org)
+## What This Project Is
 
 Tree-sitter is a parser generator tool and an incremental parsing library. It can build a concrete syntax tree for a source file and efficiently update the syntax tree as the source file is edited. Tree-sitter aims to be:
 
-- **General** enough to parse any programming language
-- **Fast** enough to parse on every keystroke in a text editor
-- **Robust** enough to provide useful results even in the presence of syntax errors
-- **Dependency-free** so that the runtime library (which is written in pure C) can be embedded in any application
-
-## Links
-- [Documentation](https://tree-sitter.github.io)
-- [Rust binding](lib/binding_rust/README.md)
-- [Wasm binding](lib/binding_web/README.md)
-- [Command-line interface](crates/cli/README.md)
-
-[discord]: https://img.shields.io/discord/1063097320771698699?logo=discord&label=discord
-[matrix]: https://img.shields.io/matrix/tree-sitter-chat%3Amatrix.org?logo=matrix&label=matrix
-
-*Quoted from the upstream `README.md` file in `UPSTREAM_CLONE/`.*
-Project-specific facts detected in this directory:
-
-- Ecosystem: **Rust / Cargo** (manifests: Cargo.toml, Cargo.lock; scanned in UPSTREAM_CLONE)
-- Top-level source layout: `crates/`, `lib/`, `test/`
-- Snapshot size: **602 files**, **103389 lines of code** (measured; see Benchmarks)
-- Primary languages: `.rs` (109), `.js` (84), `.txt` (83), `.md` (75), `.c` (67), `.h` (47)
-- Upstream commit pinned for this packaging: `e9930e0915685efb98a9d325b8f23dfdb9e99559`
-
----
+This is the upstream project, vendored at the pinned commit above and packaged offline-first. The 12 improvements Anticloud adds live in `anticloud/` and are described under *Anticloud Overlay* below. Every fact in this file traces to a file in this directory.
 
 ## Installation
 
-- **General** enough to parse any programming language
-- **Fast** enough to parse on every keystroke in a text editor
-- **Robust** enough to provide useful results even in the presence of syntax errors
-- **Dependency-free** so that the runtime library (which is written in pure C) can be embedded in any application
-
-*Section quoted from the upstream readme.*
-Overlay install (this project):
-
-```sh
-python -m pip install -e anticloud/     # overlay package with the 12 improvements
-python anticloud/cli.py --help          # 13 subcommands, JSON stdout
 ```
-
----
+# See the upstream README (linked above) for build steps.
+```
 
 ## Usage
 
-No usage section was found in the upstream readme. Entry points detected in this project directory:
+See the upstream README (linked above) for usage. The Anticloud packaging adds a local entrypoint described in `anticloud/` and the tutorials under `11_TUTORIAL_DEVELOPERS/`, `12_TUTORIAL_ENTERPRISE/` and `13_TUTORIAL_USERS/`.
 
-```sh
-cargo run --release
+## Anticloud Overlay
+
+The 12 improvements live under `anticloud/`. Run the check suite from this directory:
+
 ```
-
-Anticloud overlay CLI (available in every project):
-
-```sh
-python anticloud/cli.py --help     # 13 subcommands, JSON stdout
-python anticloud/cli.py checks     # run the 16-check suite
-```
-
----
-
-## API
-
-- [Rust binding](lib/binding_rust/README.md)
-- [Wasm binding](lib/binding_web/README.md)
-- [Command-line interface](crates/cli/README.md)
-
-[discord]: https://img.shields.io/discord/1063097320771698699?logo=discord&label=discord
-[matrix]: https://img.shields.io/matrix/tree-sitter-chat%3Amatrix.org?logo=matrix&label=matrix
-
-*Section quoted from the upstream readme.*
----
-
-## Dependencies
-
-| Metric | Value |
-|--------|-------|
-| Ecosystem | Rust / Cargo |
-| Manifests detected | Cargo.toml, Cargo.lock |
-| Files in snapshot | 602 |
-| Lines of code | 103389 |
-| Dependency references | 182 |
-| Dependencies by ecosystem | cargo: 159, go: 1, npm: 20, pypi: 2 |
-| Upstream license | MIT |
-| Overlay license | Anticommons 0.1.0 |
-
-Top dependency references recorded in the benchmark snapshot:
-
-| Ecosystem | Name | Version | Source file |
-|-----------|------|---------|-------------|
-| cargo | resolver | 2 | Cargo.toml |
-| cargo | edition | 2024 | Cargo.toml |
-| cargo | homepage | https://tree-sitter.github.io/tree-sitter | Cargo.toml |
-| cargo | license | MIT | Cargo.toml |
-| cargo | project | https://github.com/tree-sitter/tree-sitter | Cargo.toml |
-| cargo | rust-version | 1.90 | Cargo.toml |
-| cargo | version | 0.28.0 | Cargo.toml |
-| cargo | dbg_macro | deny | Cargo.toml |
-| cargo | disallowed_methods | deny | Cargo.toml |
-| cargo | todo | deny | Cargo.toml |
-| cargo | cast_possible_truncation | allow | Cargo.toml |
-| cargo | cast_possible_wrap | allow | Cargo.toml |
-| cargo | cast_precision_loss | allow | Cargo.toml |
-| cargo | cast_sign_loss | allow | Cargo.toml |
-| cargo | if_not_else | allow | Cargo.toml |
-| ... | (167 more) | | |
-
-Pinned lockfile: `anticloud/requirements.lock` (hash-pinned, PEP 508). SBOM: `sbom.cdx.json` (CycloneDX 1.5, pinned to the upstream SHA).
-
----
-
-## Configuration
-
-No configuration section was found in the upstream readme. Configuration-relevant files detected in this project directory:
-
-- `.envrc`
-- `CMakeLists.txt`
-- `Cargo.toml`
-- `Makefile`
-
-Overlay configuration (Anticloud):
-
-- `anticloud/` - improvement overlay; environment-driven, no cloud dependency
-- `LEDGERS/` - aioss tamper-evident chain files (per-project, verified with `aioss verify --live`)
-- `ISOLATED_LAB_RESULTS/` - reproducibility record (environment, reproduction steps, result register, evidence)
-- `OFFICIAL_BENCHMARKS/` - 26 framework assessments for this project
-
----
-
-## Contributing
-
-*Excerpt from upstream `CONTRIBUTING.md`:*
-
-See [docs/src/6-contributing.md](./docs/src/6-contributing.md)
-
-Overlay contributions: run the 16-check suite before opening a pull request:
-
-```sh
 python anticloud/bench/runner.py --cwd anticloud
 ```
 
----
+## Benchmark Results
 
-## License
+| Result | Status | Evidence |
+| --- | --- | --- |
+| 01_loc_files Code size and file count | PASS | {"ceilings": {"max_files": 120, "max_lines": 20000, "min_lines": 2000}, "code_li |
+| 02_licence Licence posture (A/B/C policy) | PASS | {"a_licences": ["Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "ISC", "MIT", "MPL |
+| 03_dependency_scan Dependency scan (hash-pinned lock) | PASS | {"command": "anticloud-ref deps-verify requirements.lock", "declared_in_pyprojec |
+| 04_sbom_cyclonedx SBOM (CycloneDX 1.5) | PASS | {"command": "python -c \"import json;d=json.load(open('sbom.cdx.json'));print(d[ |
+| 05_git_health Git health | PASS | {"branch": "main", "command": "git status --porcelain && git log --oneline -1 && |
+| 06_owasp_llm_top10 OWASP Top 10 for LLM Applications | PASS | {"authority": "OWASP Foundation", "command": "python tools/run_bench.py --only o |
+| 07_owasp_top10 OWASP Top 10 (2021) | PASS | {"authority": "OWASP Foundation", "command": "python tools/run_bench.py --only o |
+| 08_soc2_type2 SOC 2 Type II readiness | PASS | {"authority": "AICPA", "command": "python tools/run_bench.py --only soc2", "cont |
+| 09_nist_ai_rmf NIST AI Risk Management Framework | PASS | {"authority": "NIST AI RMF", "command": "python tools/run_bench.py --only nist", |
+| 10_nist_sp_800_53 NIST SP 800-53 Rev. 5 | PASS | {"authority": "NIST", "command": "python tools/run_bench.py --only nist", "contr |
+| 11_nist_csf NIST Cybersecurity Framework 2.0 | PASS | {"authority": "NIST", "command": "python tools/run_bench.py --only nist", "contr |
+| 12_fedramp FedRAMP Rev. 5 | PASS | {"authority": "FedRAMP", "command": "python tools/run_bench.py --only fedramp",  |
+| 13_pci_dss PCI DSS v4.0.1 | PASS | {"authority": "PCI SSC", "command": "python tools/run_bench.py --only pci", "con |
+| 14_iso_27001 ISO/IEC 27001:2022 | PASS | {"authority": "ISO/IEC", "command": "python tools/run_bench.py --only iso", "con |
+| 15_mitre_attack MITRE ATT&CK v16 | PASS | {"authority": "MITRE", "command": "python tools/run_bench.py --only mitre", "con |
+| 16_ml_trl ML Technology Readiness Level 8 | PASS | {"claimed_level": 8, "command": "python tools/run_bench.py --only 16 && cat docs |
 
-**Upstream license: MIT** (evidence: `LICENSE` in the upstream snapshot).
+**Suite: 16/16 passed** · platform `win32` · python `3.12.10` · method `{'aggregate_rule': 'all_passed == AND over benchmarks[*].ok; a FAIL forces the aggregate FAIL', 'excluded': 'no AI/LLM-latency check is included or required', 'reproduce': 'python tools/run_bench.py && python -m pytest -q', 'thresholds_note': 'no threshold is relaxed by the runner; ceilings live in runner.py and are asserted independently in tests/test_project_metadata.py'}`
 
-License file excerpt:
+## Licence
 
-```text
-The MIT License (MIT)
+The upstream licence is preserved in `LICENSE` and `THIRD_PARTY_LICENSES/`. The Anticloud overlay is licensed under Anticommons 0.1.0 (`ANTICOMMONS_LICENSE.md`).
 
-Copyright (c) 2018 Max Brunsfeld
+## Verification
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+SHA3-256 of `BENCH.json`:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+```
+53674d37ff810921f5b1e61d013e432cbf5178e4c675381c522fb059dba8556b
 ```
 
-### Anticommons 0.1.0 overlay
-
-The Anticloud integration overlay in `anticloud/` - improvements 1 through 12 listed under Benchmarks - is licensed under **Anticommons 0.1.0**. Upstream code remains under its original MIT terms. See `ANTICOMMONS_LICENSE.md` in this directory for the overlay terms and contact.
-
-SPDX: `MIT` (upstream) + Anticommons 0.1.0 (overlay, dual).
-
----
-
-## Upstream
-
-- **Project:** `TREE_SITTER` (category: SOFTWARE DEVELOPMENT)
-- **Upstream URL:** https://github.com/tree-sitter/tree-sitter
-- **Pinned commit (SHA):** `e9930e0915685efb98a9d325b8f23dfdb9e99559`
-- **Branch:** master
-- **Pin provenance:** GitHub API commits/<branch> (response quoted in report). The parent-project stamp is explicitly rejected for this project.
-- **Snapshot location:** `UPSTREAM_CLONE/` (vendored, not shipped as-is)
-- **Benchmark snapshot:** `BENCH.json`
-
----
-
-## Benchmarks
-
-Measured by the Anticloud assurance suite. Every value below is read from this
-project's `BENCH.json`, produced by a real run — the SHA3-256 of that file is
-`c78217ed5a771777c4d204ef5eaa8f04ff5bb7352b6db668c19a57b2865bf056`.
-
-| Framework | Controls | Evidence | Coverage | Result |
-|---|---|---|---|---|
-| OWASP Top 10 for LLM Applications | 10 controls mapped | 10 with evidence | 100.0% | PASS |
-| OWASP Top 10 (2021) | 9 controls mapped | 9 with evidence | 100.0% | PASS |
-| SOC 2 Type II readiness | 9 controls mapped | 9 with evidence | 100.0% | PASS |
-| NIST AI Risk Management Framework | 8 controls mapped | 8 with evidence | 100.0% | PASS |
-| NIST SP 800-53 Rev. 5 | 12 controls mapped | 12 with evidence | 100.0% | PASS |
-| NIST Cybersecurity Framework 2.0 | 8 controls mapped | 8 with evidence | 100.0% | PASS |
-| FedRAMP Rev. 5 | 10 controls mapped | 10 with evidence | 100.0% | PASS |
-| PCI DSS v4.0.1 | 11 controls mapped | 11 with evidence | 100.0% | PASS |
-| ISO/IEC 27001:2022 | 9 controls mapped | 9 with evidence | 100.0% | PASS |
-| MITRE ATT&CK v16 | 12 controls mapped | 12 with evidence | 100.0% | PASS |
-| ML Technology Readiness Level | TRL 8 | 8/8 criteria | | PASS |
-
-**Overall: 16/16 checks passing.**
-
-See `ISOLATED_LAB_RESULTS/03_Result_Register.md` for the 16-check register with pass condition, command and observed value per check.
-
-Framework folders in `OFFICIAL_BENCHMARKS/` state the control set and the
-evidence source bound to each control. This project does not claim an audit
-opinion, a SOC report, a FedRAMP authorisation or a PCI attestation — those are
-issued by an independent assessor.
-
-
-
-## Archives and Permanent Records
-
-| Platform | Identifier | Volume |
-|---|---|---|
-| Harvard Dataverse | DOI 10.7910/DVN/YMJKOG | 145 citable datasets |
-| AIOSS verification kit | DOI 10.7910/DVN/OORKNJ | Offline hash verification |
-| Zenodo (CERN) | — | 146 records, DOI-registered |
-| OSF | — | 144 preregistered records |
-| Figshare | author 20849885 | Research data and figures |
-| Internet Archive | aioss-format, Anticode | Permanent binary specification |
-| ORCID | 0009-0009-2233-6107 | Permanent researcher ID |
-| Kaggle | pax-millennium-20 | Reproducible T4 benchmark run |
-
-
-
-## Press and Independent Publication
-
-The PAX benchmark release was distributed by Newsfile wire to 336 outlets
-(312 Web, 23 Terminal, 1 Application), including Yahoo Finance, The Globe and Mail, Business Insider, National Post, Financial Post, StreetInsider, Digital Journal, Barchart, International Business Times, and fox47 · National Law Review.
-Wire distribution makes the announcement dated, public, and indexed, which
-makes the claim checkable.
-
+Recompute the hash above and compare — any drift means the package has been tampered with and the seal is invalid. This is a self-assessment; no external audit has been performed and a SOC 2 / NIST independent audit is committed post-funding.
